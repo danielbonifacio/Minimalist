@@ -1,0 +1,59 @@
+=media-set($device, $container)
+    @media screen and (max-width : $container+px)
+        .#{$device}-1
+            width: 8.3333%
+        .#{$device}-2
+            width: 16.6666%
+        .#{$device}-3
+            width: 25%
+        .#{$device}-4
+            width: 33.3333%
+        .#{$device}-5
+            width: 41.6666%
+        .#{$device}-6
+            width: 50%
+        .#{$device}-7
+            width: 58.3333%
+        .#{$device}-8
+            width: 66.6666%
+        .#{$device}-9
+            width: 75%
+        .#{$device}-10
+            width: 83.3333%
+        .#{$device}-11
+            width: 91.6666%
+        .#{$device}-12
+            width: 100%
+        .#{$device}-hide
+            display: none
+
+=default-sizes($device, $container)
+    .#{$device}-1
+        width: 8.3333%
+    .#{$device}-2
+        width: 16.6666%
+    .#{$device}-3
+        width: 25%
+    .#{$device}-4
+        width: 33.3333%
+    .#{$device}-5
+        width: 41.6666%
+    .#{$device}-6
+        width: 50%
+    .#{$device}-7
+        width: 58.3333%
+    .#{$device}-8
+        width: 66.6666%
+    .#{$device}-9
+        width: 75%
+    .#{$device}-10
+        width: 83.3333%
+    .#{$device}-11
+        width: 91.6666%
+    .#{$device}-12
+        width: 100%
+
+=break-set($size)
+    @media screen and (min-width : $size+px)
+        .container
+            width: $size+px

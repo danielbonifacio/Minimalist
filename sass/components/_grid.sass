@@ -1,0 +1,38 @@
+@import mixins
+
+.container
+    max-width: $desktop+px
+    margin: 0 auto
+
+.row
+    display: flex
+    flex-wrap: wrap
+
+.row.no-padding
+    .column
+        padding: 0
+
+.column
+    padding: 0 7.5px 
+    height: auto
+
++default-sizes('smallphone', $smallphone)
++default-sizes('phone', $phone)
++default-sizes('minitablet', $minitablet)
++default-sizes('tablet', $tablet)
++default-sizes('laptop', $laptop)
++default-sizes('desktop', $desktop)
+
++media-set('desktop', $desktop)
++media-set('laptop', $laptop)
++media-set('tablet', $tablet)
++media-set('minitablet', $minitablet)
++media-set('phone', $phone)
++media-set('smallphone', $smallphone)
+
++break-set($smallphone)
++break-set($phone)
++break-set($minitablet)
++break-set($tablet)
++break-set($laptop)
++break-set($desktop)
